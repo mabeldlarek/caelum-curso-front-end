@@ -3,13 +3,24 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="img/favicon.ico">
         <title>MusicDot | Sobre a empresa </title>
     </head>
     <body>
-        <img src="img/logo.svg" alt="Logo MusicDot">
+        <header>
+            <!--	Conteúdo	do	header	-->
+            <img src="img/logo.svg" alt="Logo MusicDot">
+            <nav>
+                <ul>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Entrar</a></li>
+                    <li><a href="#">Matricule-se</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
         <h1 class="titulo";><strong>Sobre a empresa</strong></h1>
         <!--ínicio do parágrafo-->
         <p>
@@ -39,7 +50,7 @@
         <!--fim do parágrafo-->
 
         <h2 class="texto_subtitulo"; id="hist" >História</h2>
-        <figure class="familia">
+        <figure class="imagem_familia">
             <img src="img/familia-tupfeln.jpg" alt="A familia tupfeln";>
             <figcaption>Familia Tupfeln</figcaption>
         </figure>
@@ -94,29 +105,43 @@
             </ul>
         <!--fim da lista-->
 
-        <h2 class="texto_titulo">Contato</h2>
-        <h3 class="">Correspondência</h3>
-        <small>(todos	os	dias,	das	9h	às	18h)</small>
-        <address>
-            AOVS Sistemas de Informática S.A
-            <br>
-            Rua Vargueiro, 3185, 8°andar
-            <br>
-            Vila Mariana
-            <br>
-            São Paulo - SP
-        </address>
-
-        <h3>Telefones</h3>
-        <small>(segunda à sexta, das 9h às 18h)</small>
+        <h2 class="texto_titulo"; id="contato">Contato</h2>
         
-        <dl>
-            <dt>Pessoa Física:</dt>
-            <dd> <a ref="tel://114118-3319"> (11) 4118-3319 </a> </dd>
-           
-            <dt class="contato_b">Pessoa Jurídica:</dt>
-            <dd> <a ref="tel://114118-2172"> (11)4118-2172 </a> </dd>
-        </dl>
+        <div class="contato_secao">
+            <h3 class="contato_subtitulo">Correspondência</h3>
+            <small>(todos	os	dias,	das	9h	às	18h)</small>
+            
+            <address class="contato_info">
+                AOVS Sistemas de Informática S.A
+                <br>
+                Rua Vargueiro, 3185, 8°andar
+                <br>
+                Vila Mariana
+                <br>
+                São Paulo - SP
+            </address>
+        </div>
 
-    </body>
+        <div id= "contato" class="contato_secao contato_secao--telefone">
+            <h3 class="contato_subtitulo">Telefones</h3>
+            <small>(segunda à sexta, das 9h às 18h)</small>
+            
+            <dl class="contato_info">
+                <div>
+                    <dt class = "contato_info-titulo">Pessoa Física:</dt>
+                    <dd class="contato_info-descricao"> <a href="tel:551141183319"> (11) 4118-3319 </a> </dd>
+                </div>
+            
+                <div>
+                    <dt class="contato_info-titulo">Pessoa Jurídica:</dt>
+                    <dd class="contato_info-descricao"> <a href="tel:551141182172"> (11) 4118-2172 </a> </dd>
+                </div>
+            </dl>
+      </div>
+    </main>
+    <footer class="rodape">
+        <img src="img/logo.svg" alt="Logo da musicdot" class="rodape_logo">
+        <p class="rodape_copyright" &copy; Copyright MusicDot></p>
+    </footer>
+</body>
 </html>
